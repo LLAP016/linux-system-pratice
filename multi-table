@@ -1,0 +1,13 @@
+#!/bin/bash
+read v1 v2
+for i in $(seq 1 "$v1")
+do
+	for j in $(seq 1 "$v2")
+	do
+	num=`expr $i \* $j`
+	echo -n  "$i*$j=$num " 
+	done
+echo ""
+done
+exit 0
+
